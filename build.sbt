@@ -7,8 +7,11 @@ git.gitTagToVersionNumber := { tag: String =>
 git.useGitDescribe := true
 
 name := "sequence_file_fs2"
-organization := "com.github.jponte"
+organization := "org.jponte"
 crossScalaVersions := Seq("2.12.15", "2.13.8", "3.1.1")
+githubOwner := "JPonte"
+githubRepository := "sequence-file-fs2"
+githubTokenSource := TokenSource.GitConfig("github.token")
 
 libraryDependencies ++= Seq(
   "co.fs2" %% "fs2-core" % "3.2.5",
